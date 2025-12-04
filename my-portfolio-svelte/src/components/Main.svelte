@@ -2,9 +2,8 @@
   import Step from "./Step.svelte";
 
   let steps = [
-    { name: "Biotech Store", icon: "fa-solid fa-cart-shopping" },
-    { name: "Scientific Instrument Booking System", icon: "fa-solid fa-flask" },
-    { name: "Chemical Matching", icon: "fa-solid fa-vial-circle-check" },
+    { name: "E-Commerce Store", icon: "fa-solid fa-cart-shopping", href:"https://ecom-svelte-port-ch.vercel.app/" },
+    { name: "Biotech Store", icon: "fa-solid fa-flask", href:"https://ecom-nextjs-app-ch.vercel.app/" },
   ];
 
   let benefits = [
@@ -33,7 +32,7 @@
         Flutter with Firebase for cross-platform app development
       </p>
       <a
-        href="#"
+        href="https://www.linkedin.com/in/chaiyarerk-homsirikamol-a83b83203/"
         target="_blank"
         class="blueShadow mx-auto lg:ml-0 text-base sm:text-lg md:text-xl poppins relative overflow-hidden px-6 py-3 group rounded-full bg-white text-slate-950"
       >
@@ -60,42 +59,20 @@
         Curious to <span class="poppins text-teal-400">see</span> my work?
       </h3>
     </div>
-    <a
-      href="#"
-      target="_blank"
-      class="mx-auto px-4 py-2 rounded-md border border-solid border-white flex items-center gap-2 mb-4 sm:mb-0 mt-10 hover:border-teal-700 duration-200"
-    >
-      <i class="fa-regular fa-circle-play"></i>
-      <p>watch the video</p>
-    </a>
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 md:gap-10">
+    
+    <div class="flex flex-col gap-12 mx-20 sm:flex-row sm:mx-10 md:gap-10 md:mx-20 lg:mx-30">
       <Step step={steps[0]}>
         <p>
-          A modern marketplace for biotechnology supplies, cell culture
-          reagents, and lab consumables. Designed for researchers and students
-          needing fast, reliable ordering. <strong class="text-teal-400"
-            >Smart recommendations help users find the right products quickly.</strong
-          >
+          A lightweight e-commerce web application built with SvelteKit, TailwindCSS.
+          <strong class="text-teal-400">This project demonstrates reactive state management, Svelte component structure, and responsive product pages.
+          </strong>
         </p>
       </Step>
       <Step step={steps[1]}>
         <p>
-          A centralized platform to reserve laboratory instruments and manage
-          usage schedules. <strong class="text-teal-400"
-            >Automatically syncs with calendars, sends reminders, and prevents
-            booking conflicts.</strong
-          > Ideal for academic labs and research facilities.
-        </p>
-      </Step>
-      <Step step={steps[2]}>
-        <p>
-          A platform for labs to exchange surplus chemicals for ones they
-          need—completely free of charge. Matches labs that have unused
-          chemicals with others seeking them, creating a mutual swap system.
-          <strong class="text-teal-400"
-            >Helps reduce waste, lower purchasing costs, and improve resource
-            sharing across institutions.</strong
-          >
+          This is an E-Commerce application built with Next.js, TailwindCSS, Stripe.  
+          It serves as a sample store <strong class="text-teal-400">handling biotech product listing, shopping cart, and checkout flow.
+             </strong>
         </p>
       </Step>
     </div>
@@ -121,55 +98,6 @@
                 </div>
             </div>
         {/each}
-    </div>
-    <div class="text-2xl sm:text-3xl font-semibold text-center poppins">
-        <h5>The <span class="text-teal-400 poppins">Complete</span> Package</h5>
-    </div>
-    <div class="flex flex-col overflow-x-scroll gap-10 max-w-[800px] mx-auto w-full">
-        <table class="bg-white text-slate-700 rounded text-center">
-            <thead class="border-b border-solid border-slate-200">
-                <tr class="">
-                    <th/>
-                    <th class="whitespace-nowrap p-2 px-4">Candidate #1</th>
-                    <th class="whitespace-nowrap p-2 px-4">Candidate #2</th>
-                    <th class="whitespace-nowrap p-2 px-4">Candidate #3</th>
-                    <th class="whitespace-nowrap bg-teal-700 p-2 px-4">Me</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="border-b border-solid border-slate-200">
-                    <td class="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold text-sm">Dedication</td>
-                    <td><i class="fa-solid fa-check text-slate-500" /></td>
-                    <td><i class="fa-solid fa-xmark text-slate-500" /></td>
-                    <td><i class="fa-solid fa-check text-slate-500" /></td>
-                    <td><i class="fa-solid fa-xmark text-green-500" /></td>
-                </tr>
-                <tr class="border-b border-solid border-slate-200">
-                    <td class="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold text-sm">Critical Thought</td>
-                    <td><i class="fa-solid fa-xmark text-slate-500" /></td>
-                    <td><i class="fa-solid fa-check text-slate-500" /></td>
-                    <td><i class="fa-solid fa-check text-slate-500" /></td>
-                    <td><i class="fa-solid fa-check text-green-500" /></td>
-                </tr>
-                <tr class="border-b border-solid border-slate-200">
-                    <td class="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold text-sm">Interpersonal Skills</td>
-                    <td><i class="fa-solid fa-xmark text-slate-500" /></td>
-                    <td><i class="fa-solid fa-check text-slate-500" /></td>
-                    <td><i class="fa-solid fa-xmark text-slate-500" /></td>
-                    <td><i class="fa-solid fa-check text-green-500" /></td>
-                </tr>
-                <tr class="border-b border-solid border-slate-200">
-                    <td class="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold text-sm">Programming Ability</td>
-                    <td><i class="fa-solid fa-check text-slate-500" /></td>
-                    <td><i class="fa-solid fa-check text-slate-500" /></td>
-                    <td><i class="fa-solid fa-check text-slate-500" /></td>
-                    <td><i class="fa-solid fa-check text-green-500" /></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <div class="mx-auto -mt-12 italic sm:hidden opacity-50">
-        <p>Scroll to see more &rarr;</p>
     </div>
 </section>
 </main>
