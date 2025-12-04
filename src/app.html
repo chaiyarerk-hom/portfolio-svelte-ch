@@ -35,8 +35,11 @@
       %sveltekit.body%
     </div>
     <script>
-      particlesJS.load("particles-js", "/assets/particles.json", function () {
-        console.log("callback - particles.js config loaded");
+      import { base } from '$app/paths';
+      onMount(() => {
+        particlesJS.load("particles-js", `${base}/assets/particles.json`, function () {
+        console.log("callback - particles.js config loaded")
+        });
       });
     </script>
   </body>
