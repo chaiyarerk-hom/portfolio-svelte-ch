@@ -1,6 +1,8 @@
-onlyBuiltDependencies:
-  - esbuild
-  - '@tailwindcss/oxide'
 packages:
   - apps/*
   - packages/*
+
+onlyBuiltDependencies:
+  - '@tailwindcss/oxide'
+  - '@tsparticles/engine'
+  - esbuild

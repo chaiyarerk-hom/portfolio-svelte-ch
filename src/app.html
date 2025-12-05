@@ -17,12 +17,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script
+    <!-- <script
       src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"
       integrity="sha512-Kef5sc7gfTacR7TZKelcrRs15ipf7+t+n7Zh6mKNJbmW+/RRdCW9nwfLn4YX0s2nO6Kv5Y2ChqgIakaC6PW09A=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    ></script>
+    ></script> -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     %sveltekit.head%
   </head>
@@ -30,17 +30,14 @@
     data-sveltekit-preload-data="hover"
     class="bg-slate-950 text-white relative"
   >
-    <div id="particles-js" class="fixed top-0 left-0 w-full h-full z-[-1]"></div>
+    <!-- <div id="particles-js" class="fixed top-0 left-0 w-full h-full z-[-1]"></div> -->
     <div style="display: contents" class="relative z-[-1]">
       %sveltekit.body%
     </div>
-    <script>
-      import { base } from '$app/paths';
-      onMount(() => {
-        particlesJS.load("particles-js", `${base}/assets/particles.json`, function () {
+    <!-- <script>
+        particlesJS.load("particles-js", "/assets/particles.json", function () {
         console.log("callback - particles.js config loaded")
         });
-      });
-    </script>
+    </script> -->
   </body>
 </html>
