@@ -61,20 +61,26 @@
     </div>
     
     <div class="flex flex-col gap-12 mx-20 sm:flex-row sm:mx-10 md:gap-10 md:mx-20 lg:mx-30">
-      <Step step={steps[0]}>
-        <p>
-          A lightweight e-commerce web application built with SvelteKit, TailwindCSS.
-          <strong class="text-teal-400">This project demonstrates reactive state management, Svelte component structure, and responsive product pages.
-          </strong>
-        </p>
-      </Step>
-      <Step step={steps[1]}>
-        <p>
-          This is an E-Commerce application built with Next.js, TailwindCSS, Stripe.  
-          It serves as a sample store <strong class="text-teal-400">handling biotech product listing, shopping cart, and checkout flow.
-             </strong>
-        </p>
-      </Step>
+      <div class="flex flex-col items-center gap-2">
+        <Step step={steps[0]}>
+          <p>
+            A lightweight e-commerce web application built with SvelteKit, TailwindCSS.
+            <strong class="text-teal-400">This project demonstrates reactive state management, Svelte component structure, and responsive product pages.
+            </strong>
+          </p>
+        </Step>
+        <a href="https://github.com/chaiyarerk-hom/ecom-svelte-port-ch" target="_blank" class="text-xs text-gray-400 hover:text-violet-400"><i class="fa-brands fa-github"></i> https://github.com/chaiyarerk-hom/ecom-svelte-port-ch</a>
+      </div>
+      <div class="flex flex-col items-center gap-2">
+        <Step step={steps[1]}>
+          <p>
+            This is an E-Commerce application built with Next.js, TailwindCSS, Stripe.
+            It serves as a sample store <strong class="text-teal-400">handling biotech product listing, shopping cart, and checkout flow.
+               </strong>
+          </p>
+        </Step>
+        <a href="https://github.com/chaiyarerk-hom/ecom-nextjs-app-ch" target="_blank" class="text-xs text-gray-400 hover:text-violet-400"><i class="fa-brands fa-github"></i> https://github.com/chaiyarerk-hom/ecom-nextjs-app-ch</a>
+      </div>
     </div>
   </section>
   <section id="about" class="py-20 pt-10 lg:py-32 flex flex-col gap-16 sm:gap-20 md:gap-24 relative">
